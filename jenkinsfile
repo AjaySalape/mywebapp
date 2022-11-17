@@ -1,6 +1,5 @@
-pipeline {
-    agent any
-    
+pipeline{
+    agent any    
        customWorkspace '/mnt/jenkins1'
     }
       stages {
