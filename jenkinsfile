@@ -1,8 +1,8 @@
 pipeline{
-    agent any    
-       customWorkspace '/mnt/jenkins1'
-    }
+    agent any        
+       }
       stages {
+      customWorkspace '/mnt/jenkins1'
         stage('static web') { 
             steps {
                 echo "install httpd in slave"
@@ -16,7 +16,6 @@ pipeline{
         stage('status httpd') { 
             steps {
                 sh 'sudo service httpd start' 
-            }
-        
+           }        
     }
 }
