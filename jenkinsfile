@@ -3,7 +3,6 @@ pipeline {
     
        customWorkspace '/mnt/jenkins1'
     }
-}
       stages {
         stage('static web') { 
             steps {
@@ -20,5 +19,5 @@ pipeline {
                 sh 'sudo service httpd start' 
             }
         
-    
+    }
 }
